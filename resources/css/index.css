@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./purple_background.jpg");
+    background-size: cover;
+    margin: 40px;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav a{
+    color: black;
+    font-family: monospace, 'Courier New', Courier;
+    font-weight: lighter;
+    text-align: left;
+    margin-bottom: 20px;
+    border-color: grey;
+    border-width: 2px;
+    border-style: outset;
+    border-radius: 10px;
+    background-color: lightgrey;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: darkgrey;
+    color: white;
+}
+
+header {
+    margin-top: 60px;
+}
+
+header h1 {
+    color:blueviolet;
+    font-family: monospace, 'Courier New', Courier;
+    font-size: 50px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 40px;
+    right: 40px;
+    background-color: lavender;
+    border-color: indigo;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    z-index: 50;
+}
+
+header h1#home_banner {
+    height:160px;
+}
+
+header nav.home_button {
+    position: fixed;
+    top: 30px;
+    z-index: 101;
+}
+
+header nav#home_nav {
+    text-align: center;
+    position: fixed;
+    top: 90px;
+    left: 60px;
+    right: 60px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #9980bd, #544699);
+    border-radius: 10px;
+    z-index: 100;
+}
+
+header h3 {
+    color: indigo;
+    font-family: monospace, 'Courier New', Courier;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+header nav#home_nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+main {
+    padding: 30px;
+    background-color: #cac4f5;
+    border-radius: 8px;
+    border: 5px solid #58536e;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h2 {
+    color:indigo;
+    font-family: monospace, 'Courier New', Courier;
+    font-size: 30px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+main h3 {
+    color:indigo;
+    font-family: monospace, 'Courier New', Courier;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+article {
+    color: black;
+    text-align: left;
+}
+
+a[href] {
+    color: darkblue;
+}
+
+a:hover {
+    color: midnightblue;
+}
+
+video {
+    z-index: 1;
+}
+
+footer {
+    color: black;
+    background-color: white;
+    border-color: grey;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+    font-family: cursive, 'Comic Sans MS', sans-serif;
+    opacity: 0.5;
+    margin-top: 50px;
+}
+
+#intro {
+    color: indigo;
+    font-family: monospace, 'Courier New', Courier;
+    text-align: center;
+    font-weight: bold;
+}
+
+table.calendar,
+table.schedule {
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    background-color: ghostwhite;
+    padding: 5px;
+    margin: 0 auto;
+    width: 800px;
+}
+
+table.calendar th,
+table.schedule th {
+    background-color: lavender;
+    border-color: grey;
+    color: black;
+    font-family: monospace, 'Courier New', Courier;
+    font-size: 20px;
+    padding: 5px;
+}
+
+table.calendar td {
+    background-color: gainsboro;
+    border-color: grey;
+    color: black;
+    font-family: monospace, 'Courier New', Courier;
+    font-size: 16px;
+    padding: 5px;
+}
+
+table.schedule tr.morning td {
+    background-color: honeydew;
+    border-color: grey;
+    font-family: monospace, 'Courier New', Courier;
+    font-size: 16px;
+    padding: 10px;
+}
+
+table.schedule tr.working td {
+    background-color: lightyellow;
+    border-color: grey;
+    font-family: monospace, 'Courier New', Courier;
+    font-size: 16px;
+    padding: 10px;
+}
+
+table.schedule tr.evening td {
+    background-color: blanchedalmond;
+    border-color: grey;
+    font-family: monospace, 'Courier New', Courier;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#watchedMovies {
+    margin: 0 auto;
+    width: 500px;
+}
+
+ul.movie-posters {
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul.movie-posters li {
+    display: inline-block;
+    list-style: none;
+}
