@@ -48,6 +48,112 @@
                     for better preformance. <br>
                     Laptops typically have, LCD, IPS, or OLED screens. 
                 </p>
+
+                <h4>HDDs vs SSDs and how to replace them</h4>
+                <p>SSD's don't have any moving parts thus they are faster and have a longer lifespan. They also have better power efficiency, and quiet. HDD use cases include 
+                    backups, bulk storage, archiving. They are commonly used in desktop computers and servers that require larger capacities. SSD's are more expensive. Sounds like 
+                    SSD's are generally better and thus cost more.<br>
+                    To replace things: often times the interfaces will be the same which makes things very easy. Reasons you might want to do this is to upgrade, or replace a faulty 
+                    drive, or you might need more storage capacity. To prep for replacement, back up data, check drive compatibility, and gather tools. 
+                    Here are the steps:
+                </p>
+                <ol>
+                    <li>Power off computer and unplug</li>
+                    <li>Open the case</li>
+                    <li>Locate the storage drive</li>
+                    <li>Unscrew and disconnect cables from the drive</li>
+                    <li>Align the drive in the bay and secure it with screws</li>
+                    <li>Reconnect cables</li>
+                    <li>Close the case and power on the computer</li>
+                    <li>Enter the computers BIOS/UEFI</li>
+                    <li>Partition and format the drive</li>
+                    <li>Restore or reinstall OS</li>
+                </ol>
+                <p>Some troubleshooting issues</p>
+                <ul>
+                    <li>Drive not detected, This could be due to a physical failure of connection. Or the drive type might not be compatible with the system, or a config error set in the 
+                        BIOS/UEFI
+                    </li>
+                    <li>Boot issues, Could be due to a physical problem, but it might also be a boot sequence issue. Any reconfig might have place the hard drive in the wrong order. This can be
+                         configured in the BIOS.
+                    </li>
+                    <li>Slow performance, look for updates or do a "trim" command</li>
+                </ul>
+                <p>Best practices for SSD Longevity. Enable the TRIM command. This enables the OS to check what data in the drive is no longer in use and delete it. Usually enabled by default. 
+                    To verify if it is on. use command >>fsutil behavior query DisableDeleteNotify<< If it returns a 0 then it is enabled. Check for firmware updates. Monitor the drive health. In 
+                    Windows use diskutility. avoid filling up the drive. Disable defragmentation for SSDs. Defragmentation is not needed for SSDs and can reduce their lifespan.
+                </p>
+
+                <h4>Battery health</h4>
+                <p>Laptop batteries have charge cycles that degrade over time. There are Lithium ion and lithium polymer batteries. LiPo's are more common cause the size is a little more adaptable. 
+                    Signs of battery degradation are pretty obvious. Shorter battery life, overheating and swelling, Sudden shutdown or failure. On windows you can do the command: 
+                    >>powercfg /batteryreport<< to get a battery report. This will give you an html file report about the battery health in the home directory. On Mac, you can go to about this mac > 
+                    system report > power section. There are also third party tools. <br>
+                    Factors taht affect the battery life are high brightness levels and background processes. Frequent full charge/discharges. And exposure to heat. <br>
+                    Best practices for battery preservation: Keep charge levels between 20 - 80 percent. Reduce background apps and adjust power settings. <br>
+                    It's time to replace when the health falls below 50% original capacity, if the cycle count exceeds the recommendation, or if the laptop is shutting down unexpectedly.<br>
+                    Here are steps for replacing a laptop battery:</p>
+                    <ol>
+                        <li>Verify compatibility</li>
+                        <li>Perform safe battery removal</li>
+                        <li>Install the new battery</li>
+                        <li>Battery calibration (fully charge, discharge to 10%, then recharge)</li>
+                        <li>Check system power settings</li>
+                        <li>Continue to monitor it's health</li>
+                    </ol>
+                </p>
+                
+                <h4>Displays and Antennas</h4>
+                <p>In a something like a mobile phone the screen is part of the mobile device. This can make it a huge pain to fix. In laptops the hinges can have a big impact on the health and 
+                    longevity of the display. Touch integration is also a common feature and thus a complication. Key factors for display quality are resolution, refresh rate, brightness and contrast. 
+                    When choosing a display, sometimes you need something a bit better for creative work or gaming. <br>
+                    Common issues, Dim screen, unresponsive touchscreen, dead pixels, lines, flickering screen, or color distortion. Sometimes these are from settings, sometimes they are from hardware 
+                    problems. You may need to update the driver for the screen to get the touchscreen to work. If there is a dead pixel, the screen itself might be damage. The lines might be an issue 
+                    with the GPU or capble connections for a laptop. Flickering screens could be from loose cable or inverter issue. Color distortion could be cause by a faulty display connection. <br>
+                    Antennas are for Wi-Fi, bluetooth, or Cellular. These allow you to connect to the internet or other devices. <br>
+                    Common issues could be from outside the device like a week signal or bad connection. The antenna in a laptop is often built into the screen around the outside edge. Bluetooth can usually 
+                    only reach 30 ft. Cell problems might be related to the SIM card or roaming settings. <br>
+                    Best practices for both: Avoid excessive pressure on screen, regulary clean, adjust or verify brightness settings, Keep device firmware updated, avoid obstructions that may block signals 
+                    and regularly check and secure internal antenna connections.
+                </p>
+
+                <h4>Display Types</h4>
+                <p>Laptop displays: They are integrated in nature, Hinges and mobility affect the device's lifespan, Power managment features, and some have touchscreens. <br>
+                    Display form factors: Clamshell laptops are the typical kind, 2-in-1 convertibles are able to fold into a tablet, detachable tablets have detachable screens. <br>
+                    Display panel types: Twisted nematic is an LCD type of display which is fast but not great color accuracy, In-Plan switching (IPS) has better color and viewing angles, Organic Light-emitting diode (OLED) 
+                    this is the most common, has true blacks and high contrast and is energy efficent. <br>
+                    Common Display Resolution: 720p (1280 x 720) (high def), 1080p (1920 x 1080) (Full HD), 4K (3840 x 2160) (Ultra High Def). <br>
+                    Common Refresh Rates: 60Hz (gerenal use), 120Hz & 144Hz (better for gamming and motion heavy), 240 Hz (high end gaming and professional use) <br>
+                    Types of Touch screens: Capacitive which is in modern laptops, Resistive which is used in industrial devices and require pressure, and Active digitizer panel which are in professional tablets which support 
+                    precision styluses. <br>
+                    Optimizing Display Longevity: Avoid excessive pressure on screen, clean regularly, adjust brightness settings to prevent OLED burn-in, store laptops in protective cases when traveling. <br>
+                </p>
+
+                <h4>Integrated Peripherals</h4>
+                <p>Things like microphones, webcams, speakers, and wi-fi bluetooth modules. <br>
+                    Webcams: think about resolution, frame rate (30fps vs 60fps), and privacy shutter. <br>
+                    Microphones: consider omnidirectional vs unidirectional, noise cancelling or beamforming <br>
+                    Speakers: Usually small, sometimes that limits bass output, the output might include enhancments like DTS or Dolby Atmos, AI noise suppression. <br>
+                    Laptop Screen Inverters and Display components: Powers backlight in older LCD screens, Converts DC power to AC for cold cathode fluorescent lamps (CCFL) but LED screens no longer need inverters. <br>
+                    Wireless Antennas: Laptops almost always have wi-fi, bluetooth, sometimes has Cellular. You can buy external antennas. <br>
+                    Common problems and fixes:
+                    <ul>
+                        <li>Webcam not detected: check drivers, enable camera settings.</li>
+                        <li>Microphone not working: adjust input levels, reinstall drivers.</li>
+                        <li>Weak Wi-Fi signal: update network drivers, adjust router placement.</li>
+                    </ul>
+                    Best practices for maintenance: clean everything regularly, keep drivers updated, ensure privacy settings allow access to integrated peripherals. 
+                </p>
+
+                <h4>Digitizers</h4>
+                <p>Digitizers conver analog touch or pen input into digital signals. The are found in touchscreens, drawing tablets and stylus supported devices. <br>
+                Capacitive touchscreens: use a layer of conductive material that reacts to touch. They support multi touch gestures. Have a high responsiveness and accuracy compared to resistive screens. <br>
+                Resistive touchscreens: use multiple layers that respond to physical pressure. Supports only single touch input. These are common in ATMS, industrial equipment, and 
+                older phones. But they are a bit more rugged and work well in extreme environments. Work with any object, and are more cost effective. <br>
+                Styluses: Active styluses contain internal electronics for pressure sensitivity, passive stylus are like a finger, and EMR stylus use elecromagnetic resonance for percision work. <br>
+                Common issues: Unresponsive screen (fix: restart device, clean screen, update drivers, recalibrate), ghost touches (fix: recalibrate touchscreen, check for damage), stylus not recognized 
+                (fix: check battery of stylus, update firmware), delayed response (fix: could be overheating or driver issue). <br>
+                </p>
             </article>
         </section>
     </main>
