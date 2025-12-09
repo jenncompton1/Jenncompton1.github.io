@@ -354,11 +354,102 @@
                     The TCP/IP model governs most internet and network communications. TCP (transmission control protocol) and IP (internet protocol). Different port numbers are assigned to specific services. An IP address is a single network interface with an entire system. 
                     The port number is what you are actually requesting from that system. What it is you need it to do for you. <br>
                     Well-Known Ports: 20, 21: FTP (File Transfer Protocol), 22 SSH (Secure Shell for encrypted remote access), 25 SMTP Simple Mail Transfer Protocol for sending emails, 53 DNS Domain Name System for translating domain names to IP addresses, 
-                    80 HTTP HyperText Transfer Protocol for web browsing, HTTPS Secure HTTP using SSL/TLS encryption, RDP Remote Desktop Protocol for remote access. <br>
+                    80 HTTP HyperText Transfer Protocol for web browsing, 443 HTTPS Secure HTTP using SSL/TLS encryption, RDP Remote Desktop Protocol for remote access. <br>
                     Ports and protocols are also used for security stuff. You can set up a firewall to only use the necessary ports and disable ports that are not necessary. That way an attacker cannot use those protocols. Firewalls also make sure ports are 
                     only open when requested instead of all the time. Many protocols have encrypted version. If they don't they can be encapsulated in another like HTTPS. <br>
                     Future trends: IPv6 uses a larger address. Zero Trust Network (ZTN) is a model that requires continuous verification of user requests. Quantum-safe encryption can be used by large cloud providers, which relies on physics instead of mathematics. <br>
-                    
+                </p>
+
+                <h4>Transmission Control Protocol (TCP) and User Datagram Protocol (UDP)</h4>
+                <p>
+                    These are core transport layer protocols for data transmission over IP networks. This defines layers of network communication. Only one can be used for any given type of communication. TCP ensures reliable, order, and error-checked deliver 
+                    of data. UDP is faster and lightweight but does not guarantee delivery. TCP Characteristics are "connection-oriented communication". It establishes a three-way handshake before data transmission. The client sends a SYN synch packaged, the 
+                    server responds with a SYN-ACK, and then the client sends and ACK to establish the connection. It also has error dectection by using checksums and acknowledgment messages for reliable delivery. If a package is lost it gets retransmitted. <br>
+                    Common use cases for TCP is in web browsing, email, and FTP. Basically things where loosing data would be unacceptable. <br>
+                    UDP Characteristics are connectionless communication. There is no handshake and packets are sent without prior setup. This makes it faster but less reliable. <br>
+                    Common use cases are Streaming media, video calls, DNS lookups, IoT communication. <br>
+                    Best Practices for secure TCP and UDP communication: Securing TCP with encryption like HTTPS. You can also use Firewall rules. For UDP you can use write limiting. Implement network monitoring and threat detection. <br>
+                </p>
+
+                <h4>Switches and Routers</h4>
+                <p>
+                    Each device plays a specific role in data transmission and management within a network. Switches operate within local area network and directe traffic among devices. They don't opperate from network to network. Routers connect multiple networks and manage 
+                    internet traffic. There are managed and unmanaged switches. Managed switches allow for more advanced configurations and security settings. Unmanaged switches are plug and play. There are also Layer 2 and Layter 3 switches. This refers to layers of the OSI model. 
+                    Layer 2 uses MAC addresses. Layer 3 uses IP addresses. Home internet routers are layer 3 switches. Static routing involves manually configuring paths between networks while dynamic routing uses protocols like OSPF, BGP, and EIGRP for auto path selection. <br>
+                    Types of Routers: Home routers provide Wi-Fi, firewall and basic networking. Enterprise routers provide advanced routing capabilities for high performance networks. Core routers are used in large scale ISP networks for backbone connectivity. <br>
+                    Best practices: Secure network devices, optimize network performance, monitor and maintain devices, update firmware. 
+                </p>
+
+                <h4>Access Points, Repeaters, and Extenders</h4>
+                <p>
+                    These all improve connectivity and coverage in their own way. Access points extend a wired network into a wireless one. Repeaters and extenders help amp or relay Wi-Fi singals. Extenders can be wired repeaters can't. 
+                    Repeaters rebroadcast signal, extenders extend coverate. Repeaters may reduce speed.
+                </p>
+
+                <h4>Patch panels</h4>
+                <p>
+                    Contralized connection points for network cables, improving cable management and troubleshooting. Commonly used in data centers, enterprise networks, and structured cabling systems. <br>
+                    The patch panel itself is the other end of the cable from somewhere like an office. Simplifies network maintenance and modifications cause you can just go to a single point to see what's going on. Available in fiber optic and ethernet RJ45. <br>
+                    Types: Copper patch panels (ethernet), Fiber optic patch panels, Shielded vs unshielded patch panels (shielded is nice if you are in an enviroment where interference is an issue). <br>
+                    Ensure proper labeling and documentation. Ensure each cable is terminated properly. Follow best practices for cable management. 
+                </p>
+
+                <h4>Firewalls</h4>
+                <p>
+                    A security barrier between trusted and untrusted networks. Primary function is to prevent unauthorized access, malware, and data breaches. Available as hardware, software, or cloud based solution. <br>
+                    Types: Packet filtering firewalls inspect packets at the network layer. Stateful inspection firewalls will only allow traffic from an established session, little bit better security. Highest level is Next-generation firewalls (NGFW) these have built in intrusion 
+                    detection, it can look in the packets, and it can also detect malware a bit better. <br>
+                    Deployment methods: Network based firewalls are typically hardware. Host based firewalls are software that get installed on a computer, these are designed to protect a system rather than the entire network. Cloud based firewall (FWaaS) are a service you subscribe to. 
+                    It protects cloud based systems. <br>
+                    Best Practices: Implement least privilege access, regularly check and tweak firewall rules, Enable intrusion detection and prevention systems. 
+                </p>
+
+                <h4>PoE</h4>
+                <p>
+                    Allows network cables to deliver data and power. Commonly used in enterprise networks, smart homes, and IoT environments. Common used for IP cameras, wireless AP and VoIP phones. <br>
+                    IEEE (Institute of Electrical and Electronics Engineers) PoE Standards: IEEE 802.3af (15.4W per port), IEEE 802.3at PoE+ (30W per port), IEEE 802.3bt PoE++ (up to 60W or 100W per port). <br>
+                    Configuring PoE: Using PoE switches. Use PoE injectors for legacy networks. <br>
+                    Useful but not super high power. Distances of 100m ay need extenders. Compatibility also varies depending on hardware and cables. 
+                </p>
+
+                <h4>Cable and Digital Subscriber Line (DSL) Modems</h4>
+                <p>
+                    Both are network gateway devices enabling internet connectivity. Modem comes from the words modulate and demodulate which refers to the fact that it is the electrical current that is modulated and demodulated into digital signals. <br>
+                    Cable refers to cable TV, DSL is Digital Subscriber Line. Cable modems use coaxial cables while DSL modems use telephone lines. Both provide residential and business broadband internet access. These are not as common anymore but are still 
+                    used. <br>
+                    How Cable Modems Work: They use cable internet tochnology, your TV signal also used this cable. Suffers from bandwith consumption if high user usage. They use DOCSIS standards (Data Over Cable Service Interface Specification). Supports speeds 
+                    up to 10 GBps. You'll tend to see more in urban areas. <br>
+                    How DSL Modems Work: Use the telephone line. Slower up to 100 Mbps. Dedicated bandwith per user. There are two varients ADSL (Asymmetric DSL) and SDSL (Symmetric DSL). ADSL has higher download speeds than upload. You see this in more rural areas. <br>
+                </p>
+
+                <h4>Optical Network Terminals (ONTs)</h4>
+                <p>
+                    The devices that convert fiber optic signals into ethernet signals for use. Key component in Fiber to the Premises (FTTP) and Fiber to the Home (FTTH) installations. The interface between the fiber optic network and the customer equipment. 
+                    Handles data transmission, authentication, and power management. Have voice and data support and often PoE capabilities. <br>
+                </p>
+
+                <h4>Network Interface Cards (NICs)</h4>
+                <p>
+                    The hardware component that enables devices to connect to a network via a wired or wireless connection. It's called a "card" because in some devices it is removable. For most systems these days it is integrated. NIC teaming and load balancing means 
+                    using mulitple interfaces to increase preformance and add fault tolerance. Some have Wake on LAN (WoLAN) capabilities which allows a computer to be turned on or woken up remotely via a network message. <br>
+                    Wired NIC has higher speeds and is more stable. Wireless NIC offers mobility and convenience. <br>
+                </p>
+
+                <h4>Network Topologies</h4>
+                <p>
+                    Three primary ones. Bus topology, Star topology, and Ring topology. Star is the most common. Bus topology has each device connected in a line basically. In the Ring it's the same as a bus but it loops back into a circle. Star has a central device. 
+                    Some more advanced ones are Mesh topology, Hybrid topology, and Wireless topology. Mesh is where each devie is connected to every other device (doesn't scale well). Hybrid is just a combo of severl topologies. Wireless is wireless lol. <br>
+                    Some Future Trends: Sofware-defined networking (SDN) allows you to use software to configure the topology dynamically. 5G-enabled topolgies. AI-driven network management. 
+                </p>
+
+                <h4>Subnetting</h4>
+                <p>
+                    Divides a larger network into smaller, managable sub-networks. This helps optimize IP addresses allocation, improve security and reduce network congestion. <br>
+                    IPv4 Subnetting Concepts: Subnet masks define the size of the subnet. It devides the IP address into two sections. One represents the network itself and one represents the device itself. The 192.168 is common because it is a private IP address. <br>
+                    The private address of the router connects to your network and the public IP address which connects to the internet provider. Classless Inter-Domain Routing (CIDR) allows us to vary the subnet mask. <br>
+                    IPv6 has 128 bits instead of 32 bits so it can have many many more ip addresses. Uses hexidecimal. Uses Stateless address auto configuration (SLAAC) which determines its configuration on its own. <br>
+                    You can borrow bits from the host protion to create more subnets. This reduces the number of hosts per subnet. <br>
+                    2 address in every network are not used to address your host address. The first and the last. The last address is the broadcast address. and the first is the zero address which means no host. and 255 means every host. <br>
                 </p>
 
             </article>
